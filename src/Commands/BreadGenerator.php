@@ -91,7 +91,7 @@ class BreadGenerator extends GeneratorCommand
     {
         $name = Str::replaceFirst($this->rootNamespace(), '', $name);
 
-        return  base_path('database/seeds').'/'.str_replace('\\', '/', Str::plural($name)).'BreadSeeder.php';
+        return  base_path('database/bread-seeders').'/'.str_replace('\\', '/', Str::plural($name)).'BreadSeeder.php';
     }
 
     /**
@@ -101,7 +101,7 @@ class BreadGenerator extends GeneratorCommand
      */
     protected function getNameInput()
     {
-        return trim(studly_case($this->argument('name')));
+        return trim(ucwords($this->argument('name')));
     }
 
     /**
