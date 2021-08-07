@@ -56,7 +56,7 @@ class BreadGenerator extends GeneratorCommand
     protected function buildClass($name)
     {
         $stub = $this->files->get($this->getStub());
-        return $this->replacePlaceholders($stub)->replaceNamespace($stub, $name)->replaceClass($stub, $name);
+        return $this->replacePlaceholders($stub)->replaceNamespace($stub, $name)->replaceClass($stub, Str::plural($name));
     }
 
     /**
