@@ -24,12 +24,12 @@
       "extra": {
         "hook": {
           "providers": [
-            "VoyagerBread\\BreadGeneratorServiceProvider"
+            "Owaslo\\VoyagerBread\\BreadGeneratorServiceProvider"
           ]
         },
         "laravel": {
             "providers": [
-                "VoyagerBread\\BreadGeneratorServiceProvider"
+                "Owaslo\\VoyagerBread\\BreadGeneratorServiceProvider"
             ]
         }
       }

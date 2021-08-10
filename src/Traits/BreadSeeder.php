@@ -1,6 +1,6 @@
 <?php
 
-namespace VoyagerBread\Traits;
+namespace Owaslo\VoyagerBread\Traits;
 
 use TCG\Voyager\Models\Menu;
 use TCG\Voyager\Models\DataRow;

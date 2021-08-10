@@ -1,6 +1,6 @@
 <?php
 
-namespace VoyagerBread\Commands;
+namespace Owaslo\VoyagerBread\Commands;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\GeneratorCommand;
@@ -70,6 +70,7 @@ class BreadGenerator extends GeneratorCommand
         $name = $this->argument('name');
         $replacements = collect([
             'DummyStudlyCaseSingular' => Str::studly($name),
+            'DummyStudlyCasePlural' => Str::studly(Str::plural($name)),
             'DummyStudlyCasePlural' => Str::plural(Str::studly($name)),
             'DummySnakeCaseSingular' => Str::snake($name),
             'DummySnakeCasePlural' => Str::plural(Str::snake($name))

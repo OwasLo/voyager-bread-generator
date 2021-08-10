@@ -1,6 +1,6 @@
 <?php
 
-namespace VoyagerBread;
+namespace Owaslo\VoyagerBread;
 
 use Riak\Connection;
 use Illuminate\Support\ServiceProvider;
