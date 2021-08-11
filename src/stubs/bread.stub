@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use VoyagerBread\Traits\BreadSeeder;
+use Owaslo\VoyagerBread\Traits\BreadSeeder;
 
 class DummyClassBreadSeeder extends Seeder
 {
