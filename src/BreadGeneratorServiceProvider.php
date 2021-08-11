@@ -4,7 +4,7 @@ namespace Owaslo\VoyagerBread;
 
 use Riak\Connection;
 use Illuminate\Support\ServiceProvider;
-use VoyagerBread\Commands\BreadGenerator;
+use Owaslo\VoyagerBread\Commands\BreadGenerator;
 
 class BreadGeneratorServiceProvider extends ServiceProvider
 {
