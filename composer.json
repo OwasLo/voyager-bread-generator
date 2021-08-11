@@ -2,12 +2,9 @@
     "name": "owaslo/voyager-bread-generator",
     "description": "Create BREAD from the console using artisan",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "require": {
-        "tcg/voyager": "^1.0"
-    },
-    "require-dev": {
-        "laravel/laravel": "^8.0"
+        "tcg/voyager": "^1.4.2"
     },
     "license": "MIT",
     "authors": [
