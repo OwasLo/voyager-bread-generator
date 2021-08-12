@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Owaslo\VoyagerBread\Traits\BreadSeeder;
+use Owaslo\VoyagerBread\Helpers\FormField;
 
 class DummyClassBreadSeeder extends Seeder
 {
@@ -28,7 +29,7 @@ class DummyClassBreadSeeder extends Seeder
     {
         return [
             'id' => [
-                'type'         => 'number',
+                'type'         => FormField::NUMBER,
                 'display_name' => 'ID',
                 'required'     => 1,
                 'browse'       => 0,
@@ -40,7 +41,7 @@ class DummyClassBreadSeeder extends Seeder
                 'order'        => 1,
             ],
             'created_at' => [
-                'type'         => 'timestamp',
+                'type'         => FormField::TIMESTAMP,
                 'display_name' => 'created_at',
                 'required'     => 0,
                 'browse'       => 1,
@@ -52,7 +53,7 @@ class DummyClassBreadSeeder extends Seeder
                 'order'        => 2,
             ],
             'updated_at' => [
-                'type'         => 'timestamp',
+                'type'         => FormField::TIMESTAMP,
                 'display_name' => 'updated_at',
                 'required'     => 0,
                 'browse'       => 0,

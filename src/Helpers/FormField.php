@@ -2,7 +2,7 @@
 
 namespace Owaslo\VoyagerBread\Helpers;
 
-class VoyagerFormField
+class FormField
 {
     const TEXT = "text";
     const TEXT_AREA = "text_area";
