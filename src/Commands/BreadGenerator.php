@@ -29,7 +29,7 @@ class BreadGenerator extends GeneratorCommand
      */
     public function handle()
     {
-        $seederName = Str::studly(Str::plural($this->argument('name')).'BreadSeeder');
+        $seederName = Str::studly(Str::plural($this->argument('name')) . 'BreadSeeder');
         $this->info('Making BREAD');
 
         parent::handle();
@@ -70,10 +70,11 @@ class BreadGenerator extends GeneratorCommand
         $name = $this->argument('name');
         $replacements = collect([
             'DummyStudlyCaseSingular' => Str::studly($name),
-            'DummyStudlyCasePlural' => Str::studly(Str::plural($name)),
             'DummyStudlyCasePlural' => Str::plural(Str::studly($name)),
             'DummySnakeCaseSingular' => Str::snake($name),
-            'DummySnakeCasePlural' => Str::plural(Str::snake($name))
+            'DummySnakeCasePlural' => Str::plural(Str::snake($name)),
+            'DummyTitleCaseSingular' => Str::title(Str::replace("_", " ", Str::snake($name))),
+            'DummyTitleCasePlural' => Str::title(Str::replace("_", " ", Str::plural(Str::snake($name)))),
         ]);
         foreach ($replacements as $placeholder => $replacement) {
             $stub = str_replace($placeholder, $replacement, $stub);
@@ -92,7 +93,7 @@ class BreadGenerator extends GeneratorCommand
     {
         $name = Str::replaceFirst($this->rootNamespace(), '', $name);
 
-        return  base_path('database/seeders').'/'.str_replace('\\', '/', Str::plural($name)).'BreadSeeder.php';
+        return  base_path('database/seeders') . '/' . str_replace('\\', '/', Str::plural($name)) . 'BreadSeeder.php';
     }
 
     /**
@@ -140,6 +141,6 @@ class BreadGenerator extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/../stubs/bread.stub';
+        return __DIR__ . '/../stubs/bread.stub';
     }
 }

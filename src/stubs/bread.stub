@@ -15,8 +15,8 @@ class DummyClassBreadSeeder extends Seeder
         return [
             // usually the name of the table
             'name'                  => 'DummySnakeCasePlural',
-            'display_name_singular' => 'DummyStudlyCaseSingular',
-            'display_name_plural'   => 'DummyStudlyCasePlural',
+            'display_name_singular' => 'DummyTitleCaseSingular',
+            'display_name_plural'   => 'DummyTitleCasePlural',
             'icon'                  => '',
             'model_name'            => 'App\Models\DummyStudlyCaseSingular',
             'controller'            => '',
@@ -71,7 +71,7 @@ class DummyClassBreadSeeder extends Seeder
     {
         return [
             'role'      => 'admin',
-            'title'      => 'DummyStudlyCasePlural',
+            'title'      => 'DummyTitleCasePlural',
             'url'        => '',
             'route'      => 'voyager.DummySnakeCasePlural.index',
             'target'     => '_self',
